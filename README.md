@@ -67,7 +67,7 @@ To add a props file:
 * [**Proj0015** Order package references alphabetically](rules/Proj0015.md)
 * [**Proj0016** Order project references alphabetically](rules/Proj0016.md)
 * [**Proj0017** Can't create alias for static using directive](rules/Proj0017.md)
-* [**Proj0018** Order using directives per type](rules/Proj0018.md)
+* [**Proj0018** Order using directives by type](rules/Proj0018.md)
 * [**Proj0019** Order using directives alphabetically](rules/Proj0019.md)
 * [**Proj0200** Define IsPackable explicitly](rules/Proj0200.md)
 * [**Proj0201** Define the project version explicitly](rules/Proj0201.md)
