@@ -6,7 +6,7 @@ changing its serverity. The good news is: this can be done.
 ## Editor configuration
 Most (but not all) C# and VB.NET rules can be configured in the `.editorconfig`
 file. Unfortunatly, changing the severity (and other configuration) of rules 
-in the `.editorconfig` is **NOT** supported by MS Build.
+in the `.editorconfig` is [**NOT** supported by MS Build](https://github.com/dotnet/roslyn/issues/37876).
 
 ## Analyzer INI file
 Fortunatly, it is possible to define project specfic preferences just as you
@@ -29,6 +29,35 @@ is_global = false
 
 dotnet_diagnostic.Proj0002.severity = error # Upgrade legacy MS Build project files
 dotnet_diagnostic.Proj0010.severity = none  # Define OutputType explicitly
+```
+
+## Global analyzer config
+It is alos possible to configure rule using a [Global AnalyzerConfig](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/configuration-files#global-analyzerconfig)
+`.globalconfig` file located in the same directory as the project file or in
+one of its (grand)parent directories. The following `.globalconfig` file will
+ disable rule `Proj0010` and raise `Proj0011` to error level:
+
+``` INI
+is_global = true
+
+dotnet_diagnostic.Proj0010.severity = none  # Define the <OutputType> node explicitly.
+dotnet_diagnostic.Proj0011.severity = error # Property <{0}> has been already defined.
+```
+
+## Disable rules using <NoWarn>
+It is possible to disable warnings through the `<NoWarn>` tags inside a `<PropertyGroup>`
+tag inside your `.csproj` (or `.props`) file.
+
+An example of disabling rules `Proj0010` and `Proj0011` through the `.csproj` file:
+
+``` XML
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <NoWarn>Proj0010;Proj0011</NoWarn>
+  </PropertyGroup>
+  
+</PropertyGroup>
 ```
 
 ## Suppress specfic warnings
