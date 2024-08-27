@@ -1,7 +1,7 @@
 # Configuration of .NET project file analyzers
 Although all **.NET project file analyzers** should work *as is* like a charm,
-there might be reasons to do some adjustments: disabling a specfic rule or
-changing its serverity. The good news is: this can be done.
+there might be reasons to do some adjustments: disabling a specific rule or
+changing its severity. The good news is: this can be done.
 
 ## Editor configuration
 Most (but not all) C# and VB.NET rules can be configured in the `.editorconfig`
@@ -9,7 +9,7 @@ file. Unfortunatly, changing the severity (and other configuration) of rules
 in the `.editorconfig` is [**NOT** supported by MS Build](https://github.com/dotnet/roslyn/issues/37876).
 
 ## Analyzer INI file
-Fortunatly, it is possible to define project specfic preferences just as you
+Fortunately, it is possible to define project specific preferences just as you
 would have done in an `.editorconfig` file, using `<EditorConfigFiles>`:
 
 ``` XML
@@ -60,7 +60,7 @@ An example of disabling rules `Proj0010` and `Proj0011` through the `.csproj` fi
 </PropertyGroup>
 ```
 
-## Suppress specfic warnings
+## Suppress specific warnings
 Addopted from C-style languages it is possible to suppress
 individual violations and/or [false positives](https://en.wikipedia.org/wiki/False_positives_and_false_negatives).
 In a MS Build project file this would look like:
