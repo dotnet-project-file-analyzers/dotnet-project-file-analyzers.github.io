@@ -86,7 +86,7 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 
 ### Central Package Version Management
 * [**Proj0800** Configure Central Package Version Management](rules/Proj0800.md)
-* [**Proj0800** Use Central Package Version Management](rules/Proj0800.md)
+* [**Proj0801** Use Central Package Version Management](rules/Proj0801.md)
 
 ### Analyzers
 * [**Proj1000** Use the .NET project file analyzers](rules/Proj1000.md)
