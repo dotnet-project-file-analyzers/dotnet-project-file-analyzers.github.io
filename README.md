@@ -142,4 +142,3 @@ To add a props file:
 
 </Project>
 ```
-
