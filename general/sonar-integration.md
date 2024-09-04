@@ -1,7 +1,7 @@
 # Sonarcloud
 
 *Currently, this readme is confirmed to work for SonarCloud. The steps in this guide
-might also be relevant for other [SonarSource](https://www.sonarsource.com) products,\
+might also be relevant for other [SonarSource](https://www.sonarsource.com) products,
 such as SonarQube, but this has not been verified at this time*
 
 [Sonarcloud](https://www.sonarsource.com/products/sonarcloud/) is a service which allows
