@@ -5,7 +5,7 @@ containing [Roslyn](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/)
 (static code) [analyzers](https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.diagnostics.diagnosticanalyzer)
 that report issues on .NET project files.
 
-The documentation reflect the current repository state of the features, not the
+The documentation reflects the current repository state of the features, not the
 released ones. Check the [Release Notes](https://www.nuget.org/packages/DotNetProjectFile.Analyzers#releasenotes-body-tab)
 to understand if the documented feature you want to use has been released.
 
