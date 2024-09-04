@@ -142,3 +142,6 @@ To add a props file:
 
 </Project>
 ```
+
+## Sonar integration
+By default, results by .NET project file analyzers are not added to Sonar's reporting. Read [here](general/sonar-integration.md) how to configure this correctly.
