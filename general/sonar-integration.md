@@ -31,8 +31,7 @@ For Example:
 ``` XML
   <ItemGroup>
     <Content Include="$(MSBuildProjectFile)" CopyToOutputDirectory="Never"/>
-    <Content Include="../../props/common.props" CopyToOutputDirectory="Never"/>
-    <Content Include="../../Directory.Packages.props" CopyToOutputDirectory="Never"/>
-    <Content Include="**/*.props" CopyToOutputDirectory="Never"/>
+    <Content Include="../../props/common.props" CopyToOutputDirectory="Never" Link="Properties/common.props"/>
+    <Content Include="../../Directory.Packages.props" CopyToOutputDirectory="Never" Link="Properties/Directory.Packages.props"/>
   </ItemGroup>
 ```
