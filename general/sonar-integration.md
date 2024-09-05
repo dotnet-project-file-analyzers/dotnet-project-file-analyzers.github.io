@@ -23,12 +23,16 @@ developers.
 
 ## Sonarcloud integration
 There is currently no *'elegant'* solution to have the warnings show up on SonarCloud,
-however, there is a workaround. By adding the ??proj file as content, SonarCloud will
-recognise it's warnings and pick them up, same as any warnings in the code.
+however, there is a workaround. By adding the `.??proj` and `.props` files as content,
+SonarCloud will recognise it's warnings and pick them up, same as any warnings in the
+code.
 
 For Example:
 ``` XML
   <ItemGroup>
     <Content Include="$(MSBuildProjectFile)" CopyToOutputDirectory="Never"/>
+    <Content Include="../../props/common.props" CopyToOutputDirectory="Never"/>
+    <Content Include="../../Directory.Packages.props" CopyToOutputDirectory="Never"/>
+    <Content Include="**/*.props" CopyToOutputDirectory="Never"/>
   </ItemGroup>
 ```
