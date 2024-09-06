@@ -26,8 +26,6 @@ packages.
 |                                  | Do use an image that is 128x128 and has a transparent background (PNG) for best viewing results.
 |                                  | Consider setting up Source Link to automatically add source control metadata to your NuGet package and make your library easier to debug.
 |                                  | Do choose an open source license to make your package open source.
-|                                  | Consider including a license expression in your package.
-|                                  | Do include a license file in your package.
 
 
 ## Further reading
