@@ -5,7 +5,7 @@ packages.
 
 .NET project file analyzers provides rules for most of them:
 
-| Rule                             | Recomandation
+| Rule                             | Recommendation
 |:--------------------------------:|----------------------------------------------
 | [Proj0200](../rules/Proj0200.md) | Explicitly define the package as packable.
 | [Proj0201](../rules/Proj0201.md) | Consider using SemVer to version your NuGet package.
