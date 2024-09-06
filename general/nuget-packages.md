@@ -12,7 +12,8 @@ packages.
 | [Proj0202](../rules/Proj0202.md) | Do include a short description (up to 4000 characters) to describe your package.
 | [Proj0203](../rules/Proj0203.md) | Do use the author field for your or your organization's "pretty name."
 | [Proj0204](../rules/Proj0204.md) | Do include several tags with key terms related to your package to enhance discoverability.
-| [Proj0206](../rules/Proj0206.md) | Do include a link to an associated project, repository, or company website.
+| [Proj0205](../rules/Proj0205.md) | Do include a link to an associated repository
+| [Proj0206](../rules/Proj0206.md) | Do include a link to an associated project or company website.
 | [Proj0207](../rules/Proj0207.md) | Do add a copyright notice to your package with "Copyright (c) <name/company> <year>."
 | [Proj0208](../rules/Proj0208.md) | Do include release notes with each update describing what changes were made.
 | [Proj0209](../rules/Proj0209.md) | Do add a README markdown file that provides an overview of what your package does and how to get started.
