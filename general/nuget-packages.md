@@ -7,6 +7,7 @@ packages.
 
 | Rule                             | Recomandation
 |:--------------------------------:|----------------------------------------------
+| [Proj0200](../rules/Proj0200.md) | Explicitly define the package as packable.
 | [Proj0201](../rules/Proj0201.md) | Consider using SemVer to version your NuGet package.
 | [Proj0202](../rules/Proj0202.md) | Do include a short description (up to 4000 characters) to describe your package.
 | [Proj0203](../rules/Proj0203.md) | Do use the author field for your or your organization's "pretty name."
