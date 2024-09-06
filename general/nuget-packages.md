@@ -19,6 +19,8 @@ packages.
 | [Proj0210](../rules/Proj0210.md) | Do include a license expression or license file in your package.
 | [Proj0211](../rules/Proj0211.md) | Do not use the deprecated PackageLicenseUrl to include a license.
 | [Proj0212](../rules/Proj0212.md) | Consider including an icon with your package to help to visually differentiate it. It's a relatively small addition that can improve perception of package quality.
+| [Proj0213](../rules/Proj0213.md) | Consider adding the icon url for maximum compatibility.
+| [Proj0214](../rules/Proj0214.md) | Do include the package id.
 | *none*                           | Consider choosing a NuGet package name with a prefix that meets NuGet's [prefix reservation criteria](https://learn.microsoft.com/nuget/nuget-org/id-prefix-reservation).
 |                                  | Do use an image that is 128x128 and has a transparent background (PNG) for best viewing results.
 |                                  | Consider setting up Source Link to automatically add source control metadata to your NuGet package and make your library easier to debug.
