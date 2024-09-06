@@ -3,7 +3,7 @@ Microsoft provides [best practices](https://learn.microsoft.com/nuget/create-pac
 to give NuGet package authors a reference to create and publish high-quality
 packages.
 
-.NET project file analyzers provided rules for most of them:
+.NET project file analyzers provides rules for most of them:
 
 | Rule                             | Recomandation
 |:--------------------------------:|----------------------------------------------
