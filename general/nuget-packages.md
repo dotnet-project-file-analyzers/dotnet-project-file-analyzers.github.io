@@ -1,5 +1,5 @@
 # NuGet packages
-microsoft provides [best practices](https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices)
+Microsoft provides [best practices](https://learn.microsoft.com/nuget/create-packages/package-authoring-best-practices)
 to give NuGet package authors a reference to create and publish high-quality
 packages.
 
