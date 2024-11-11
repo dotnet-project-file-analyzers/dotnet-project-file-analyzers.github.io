@@ -173,4 +173,4 @@ To add a props file:
 By default, results by .NET project file analyzers are not added to Sonar's reporting. Read [here](general/sonar-integration.md) how to configure this correctly.
 
 ## License
-.NET project file analyzers  is licensed under [MIT](LICENSE.MD).
+.NET project file analyzers is licensed under [MIT](LICENSE.MD).
