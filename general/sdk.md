@@ -31,7 +31,7 @@ contain `<Compile>` items, and the binary output is hidden for that reason.
 All automatically included files and files added as `<AdditionalFiles>` are
 analyzed by the appropriate .NET Project File Analyzers.
 
-Those analyzers can be inlcude included with:
+Those analyzers can be included with:
 
 ``` XML
 <ItemGroup>
