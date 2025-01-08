@@ -23,7 +23,7 @@ directory conting the [Git](https://en.wikipedia.org/wiki/Git) repo), you
 </Project>
 ```
 
-Most files in the directory of this SDK project will be Included automatically.
+Most files in the directory of this SDK project will be included automatically.
 This includes configuration, text, and markdown files. It will not contain any
 `<Compile>` items unless explictly added. The SDK project is not intended to
 contain `<Compile>` items, and the binary output is hidden for that reason.
