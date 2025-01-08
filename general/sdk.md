@@ -43,5 +43,6 @@ This can be in the `.net.csproj` file, but it is advised to do this in the
  `Directory.Build.props` file instead.
 
 The SDK project can - on top of the analysis - also act as a replacement of
-the `Solution Items` folder (and other folders) a lot of `.sln` solution files
-contain. This should improve the maintainabillity of the `.sln` solution too.
+the `Solution Items` folder (and other folders) that contain a lot of
+solution files. This should improve the maintainabillity of the `.sln`
+solution too.
