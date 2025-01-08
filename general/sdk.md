@@ -2,7 +2,7 @@
 .NET Project File Analyzers ships with its own SDK. This allows files shared by
 multiple projects to be analyzed. It applies a *trick* also used by the
 [Microsoft.NET.Test.Sdk](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk);
-providing both a custom `.props` as a `.targets` MS Build file.
+providing both a custom `.props` and a `.targets` MS Build file.
 
 ## .net.csproj
 So how does it work? At the root level of your solution (most likely the
@@ -11,6 +11,10 @@ directory conting the [Git](https://en.wikipedia.org/wiki/Git) repo), you
 
 ``` XML
 <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
 
   <ItemGroup>
    <PackageReference Include="DotNetProjectFile.Analyzers.Sdk" Version="*" PrivateAssets="all" />
@@ -22,11 +26,21 @@ directory conting the [Git](https://en.wikipedia.org/wiki/Git) repo), you
 Most files in the directory of this SDK project will be Included automatically.
 This includes configuration, text, and markdown files. It will not contain any
 `<Compile>` items unless explictly added. The SDK project is not intended to
-contain `<Compile>` items, and the binary ouptut is hidden for that reason.
+contain `<Compile>` items, and the binary output is hidden for that reason.
 
 All automatically included files and files added as `<AdditionalFiles>` are
-analyzed by the appropriate .NET Project File Analyzers: those analyzers are
-also inlcuded automatically.
+analyzed by the appropriate .NET Project File Analyzers.
+
+Those analyzers can be inlcude included with:
+
+``` XML
+<ItemGroup>
+  <PackageReference Include="DotNetProjectFile.Analyzers" Version="*" PrivateAssets="all" />
+</ItemGroup>
+```
+
+This can be in the `.net.csproj` file, but it is advised to do this in the
+ `Directory.Build.props` file instead.
 
 The SDK project can - on top of the analysis - also act as a replacement of
 the `Solution Items` folder (and other folders) a lot of `.sln` solution files
