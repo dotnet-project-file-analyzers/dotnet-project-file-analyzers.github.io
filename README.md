@@ -135,8 +135,8 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 ### Dependency Management
 * [**Proj1100** Avoid using Moq](rules/Proj1100.md)
 * [**Proj1101** Package references should have stable versions](rules/Proj1101.md)
-* [**Proj1102** Project reference includes should exist](rules/Proj1102.md)
 * [**Proj1200** Exclude private assets as project file dependency](rules/Proj1200.md)
+* [**Proj1300** Project reference includes should exist](rules/Proj1300.md)
 
 ## Resource file rules
 * [**Proj2000** Embed valid resource files](rules/Proj2000.md)
