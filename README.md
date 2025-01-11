@@ -63,7 +63,7 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 * [**Proj0019** Order using directives alphabetically](rules/Proj0019.md)
 * [**Proj0020** Item group should only contain nodes of a single type](rules/Proj0020.md)
 * [**Proj0021** Build actions should have a single task](rules/Proj0021.md)
-* [**Proj0022** Build actions should have a single task](rules/Proj0022.md)
+* [**Proj0022** Build action includes should exist](rules/Proj0022.md)
 * [**Proj0023** Use forward slashes in paths](rules/Proj0023.md)
 * [**Proj0024** Order package versions alphabetically](rules/Proj0024.md)
 * [**Proj0025** Migrate from ruleset file to .editorconfig file](rules/Proj0025.md)
@@ -132,9 +132,10 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 * [**Proj1701** Use CDATA for large texts](rules/Proj1701.md)
 * [**Proj1702** Omit XML declarations](rules/Proj1702.md)
 
-### Other
+### Dependency Management
 * [**Proj1100** Avoid using Moq](rules/Proj1100.md)
 * [**Proj1101** Package references should have stable versions](rules/Proj1101.md)
+* [**Proj1102** Project reference includes should exist](rules/Proj1102.md)
 * [**Proj1200** Exclude private assets as project file dependency](rules/Proj1200.md)
 
 ## Resource file rules
