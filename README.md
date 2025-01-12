@@ -74,6 +74,7 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 * [**Proj0030** Use VB.NET specific properties only when applicable](rules/Proj0030.md)
 * [**Proj0031** Adopt preferred casing of nodes](rules/Proj0031.md)
 * [**Proj0032** Migrate away from BinaryFormatter](rules/Proj0032.md)
+* [**Proj0033** Project reference includes should exist](rules/Proj0033.md)
 
 ### Packaging
 * [**Proj0200** Define IsPackable explicitly](rules/Proj0200.md)
@@ -132,11 +133,10 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 * [**Proj1701** Use CDATA for large texts](rules/Proj1701.md)
 * [**Proj1702** Omit XML declarations](rules/Proj1702.md)
 
-### Dependency Management
+### Other
 * [**Proj1100** Avoid using Moq](rules/Proj1100.md)
 * [**Proj1101** Package references should have stable versions](rules/Proj1101.md)
 * [**Proj1200** Exclude private assets as project file dependency](rules/Proj1200.md)
-* [**Proj1300** Project reference includes should exist](rules/Proj1300.md)
 
 ## Resource file rules
 * [**Proj2000** Embed valid resource files](rules/Proj2000.md)
