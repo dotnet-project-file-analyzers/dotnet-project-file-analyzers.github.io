@@ -11,11 +11,14 @@ plugins:
 - jekyll-include-cache
 - jekyll-sitemap
 
+<<<<<<< HEAD
 kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
 
+=======
+>>>>>>> 287c00e274bd036bf3946fdfc787715b1916ead3
 compress_html:
   ignore:
     envs: all
