@@ -1,7 +1,7 @@
-name: Reviewdog LanguageTool
+name: Reviewdog Misspell
 on: [pull_request]
 jobs:
-  languagetool:
+  misspell:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -10,12 +10,15 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
-      - uses: reviewdog/action-languagetool@v1.20.2
+      - uses: reviewdog/action-misspell@v1.26.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           level: error
-          language: 'en-US'
-          patterns: '**/*.md **/*.MD **/*.txt **/*.TXT'
-          disabled_categories: ''
-          disabled_rules: ''
+          locale: "US"
+          pattern: |
+            *.md
+            *.MD
+            *.txt
+            *.TXT
+          filter_mode: nofilter
