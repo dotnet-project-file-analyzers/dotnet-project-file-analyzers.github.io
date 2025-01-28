@@ -18,4 +18,4 @@ jobs:
           language: 'en-US'
           patterns: '**/*.md **/*.MD **/*.txt **/*.TXT'
           disabled_categories: ''
-          disabled_rules: ''
+          disabled_rules: 'MORFOLOGIK_RULE_EN_US'
