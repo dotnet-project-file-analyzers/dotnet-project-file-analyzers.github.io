@@ -1,0 +1,15 @@
+name: Reviewdog LanguageTool
+on: [pull_request]
+jobs:
+  languagetool:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: reviewdog/action-languagetool@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
