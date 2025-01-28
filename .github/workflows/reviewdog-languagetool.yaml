@@ -13,3 +13,5 @@ jobs:
       - uses: reviewdog/action-languagetool@v1.20.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          patterns: '**/*.md **/*.MD **/*.txt'
