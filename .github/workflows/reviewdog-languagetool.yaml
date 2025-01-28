@@ -10,6 +10,6 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
-      - uses: reviewdog/action-languagetool@v1
+      - uses: reviewdog/action-languagetool@v1.20.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
