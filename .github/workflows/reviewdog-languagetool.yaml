@@ -30,3 +30,4 @@ jobs:
             *.MD
             *.txt
             *.TXT
+          filter_mode: nofilter
