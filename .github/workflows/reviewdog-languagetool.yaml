@@ -16,7 +16,7 @@ jobs:
           reporter: github-pr-review
           level: error
           language: 'en-US'
-          patterns: '**/*.md **/*.MD **/*.txt'
+          patterns: '**/*.md **/*.MD **/*.txt **/*.TXT'
           disabled_categories: ''
           disabled_rules: ''
       - uses: reviewdog/action-misspell@v1.26.1
@@ -25,4 +25,8 @@ jobs:
           reporter: github-pr-review
           level: error
           locale: "US"
-          pattern: *.md
+          pattern: |
+            *.md
+            *.MD
+            *.txt
+            *.TXT
