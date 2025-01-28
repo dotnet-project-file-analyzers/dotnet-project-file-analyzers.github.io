@@ -1,7 +1,7 @@
 name: Reviewdog LanguageTool
 on: [pull_request]
 jobs:
-  languagetool:
+  reviewdog:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -17,3 +17,7 @@ jobs:
           patterns: '**/*.md **/*.MD **/*.txt'
           disabled_categories: ''
           disabled_rules: 'WHITESPACE_RULE,EN_QUOTES,DASH_RULE,WORD_CONTAINS_UNDERSCORE,UPPERCASE_SENTENCE_START,ARROWS,COMMA_PARENTHESIS_WHITESPACE,UNLIKELY_OPENING_PUNCTUATION,SENTENCE_WHITESPACE,CURRENCY,EN_UNPAIRED_BRACKETS,PHRASE_REPETITION,PUNCTUATION_PARAGRAPH_END,METRIC_UNITS_EN_US,ENGLISH_WORD_REPEAT_BEGINNING_RULE'
+      - uses: reviewdog/action-misspell@v1.26.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          locale: "US"
