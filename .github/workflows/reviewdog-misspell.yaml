@@ -22,3 +22,5 @@ jobs:
             *.txt
             *.TXT
           filter_mode: nofilter
+          fail_level: none
+          fail_on_error: false
