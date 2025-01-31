@@ -146,7 +146,6 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 * [**Proj1100** Avoid using Moq](rules/Proj1100.md)
 * [**Proj1101** Package references should have stable versions](rules/Proj1101.md)
 * [**Proj1102** Use Coverlet Collector or MSBuild](rules/Proj1102.md)
-* [**Proj1103** Coverlet requires Microsoft.NET.Test.Sdk 17.5.0 or higher](rules/Proj1103.md)
 * [**Proj1200** Exclude private assets as project file dependency](rules/Proj1200.md)
 
 ## Resource file rules
