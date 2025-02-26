@@ -17,7 +17,7 @@ inconsistencies, incorrect formatting, and misusage.
 
 All rules come with a clear explanation on why the spotted issue is a bad
 practice, and how the code should be adjusted. We hope, that as a result,
-developers using our analyzers also learn a thing while worknig with them.
+developers using our analyzers also learn a thing while working with them.
 
 ## Installation
 [![DotNetProjectFile.Analyzers](https://img.shields.io/nuget/v/DotNetProjectFile.Analyzers)![DotNetProjectFile.Analyzers](https://img.shields.io/nuget/dt/DotNetProjectFile.Analyzers)](https://www.nuget.org/packages/DotNetProjectFile.Analyzers)
