@@ -15,7 +15,7 @@ of the codebase. We strongly believe that all files should be easy to read,
 maintain, or to adjust. Our analyzers help with that. They spot noise, bugs,
 inconsistencies, incorrect formatting, and misusage.
 
-All rules come with a clear explaination on why the spotted issue is a bad
+All rules come with a clear explanation on why the spotted issue is a bad
 practice, and how the code should be adjusted. We hope, that as a result,
 developers using our analyzers also learn a thing while worknig with them.
 
