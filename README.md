@@ -13,7 +13,7 @@ to understand if the documented feature you want to use has been released.
 We consider all files - so not only those who are compiled - in a project part
 of the codebase. We strongly believe that all files should be easy to read,
 maintain, or to adjust. Our analyzers help with that. They spot noise, bugs,
-inconsitancies, mallformatting, and misusage.
+inconsistencies, incorrect formatting, and misusage.
 
 All rules come with a clear explaination on why the spotted issue is a bad
 practice, and how the code should be adjusted. We hope, that as a result,
