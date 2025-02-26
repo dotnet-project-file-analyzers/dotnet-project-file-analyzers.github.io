@@ -10,7 +10,7 @@ released ones. Check the [Release Notes](https://www.nuget.org/packages/DotNetPr
 to understand if the documented feature you want to use has been released.
 
 ## Purpose
-We consider all files - so not only those who are compiled - in a project part
+We consider all files in a project - so not only those who are compiled - part
 of the codebase. We strongly believe that all files should be easy to read,
 maintain, or to adjust. Our analyzers help with that. They spot noise, bugs,
 inconsistencies, incorrect formatting, and misusage.
