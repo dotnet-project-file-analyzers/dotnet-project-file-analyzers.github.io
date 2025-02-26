@@ -11,7 +11,7 @@ providing both a custom `.props` and a `.targets` MS Build file.
 
 ## .net.csproj
 So how does it work? At the root level of your solution (most likely the
-directory conting the [Git](https://en.wikipedia.org/wiki/Git) repo), you
+directory containing the [Git](https://en.wikipedia.org/wiki/Git) repo), you
 create a C# Project file with the name `.net.csproj`.
 
 ``` xml
