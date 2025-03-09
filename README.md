@@ -92,7 +92,7 @@ reported a the [GibHub repository](https://github.com/dotnet-project-file-analyz
 * [**Proj0038** Fully specify NoWarn rule IDs](rules/Proj0038.md)
 * [**Proj0039** Treat all warnings as errors is considered a bad practice](rules/Proj0039.md)
 
-### Pa9kaging
+### Packaging
 * [**Proj0200** Define IsPackable explicitly](rules/Proj0200.md)
 * [**Proj0201** Define the project version explicitly](rules/Proj0201.md)
 * [**Proj0202** Define the project description explicitly](rules/Proj0202.md)
