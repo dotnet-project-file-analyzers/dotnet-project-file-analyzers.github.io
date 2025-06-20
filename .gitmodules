@@ -1,4 +1,0 @@
-[submodule "code_repo"]
-	path = code_repo
-	url = https://github.com/dotnet-project-file-analyzers/dotnet-project-file-analyzers.git
-	branch = main
