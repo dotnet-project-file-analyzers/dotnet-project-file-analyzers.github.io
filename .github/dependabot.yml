@@ -1,8 +1,0 @@
-version: 2
-
-updates:
-  - package-ecosystem: gitsubmodule
-    schedule:
-        interval: "cron"
-        cronjob: "*/10 * * * *"
-    directory: /
