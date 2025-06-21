@@ -4,5 +4,5 @@ updates:
   - package-ecosystem: gitsubmodule
     schedule:
         interval: "cron"
-        cronjob: "0 12 * * *"
+        cronjob: "*/10 * * * *"
     directory: /
