@@ -13,7 +13,7 @@ plugins:
 - jekyll-include-cache
 - jekyll-sitemap
 
-source: docs/docs
+source: ./foo
 safe: false
 markdown: kramdown
 highlighter: rouge
