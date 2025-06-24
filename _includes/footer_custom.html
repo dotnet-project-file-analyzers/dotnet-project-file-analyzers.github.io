@@ -1,8 +1,8 @@
 <script>
-(function(){
+window.addEventListener('load', function(){
     const button = document.getElementById('edit-this-page');
     const oldUrl = button.href;
     const newUrl = oldUrl.replace('/main-repo/', '/');
     button.href = newUrl;
-})();
+});
 </script>
