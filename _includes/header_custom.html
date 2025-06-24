@@ -27,7 +27,7 @@
 <a class="site-button" id="theme-toggle" style="cursor: pointer;"></a>
 
 <script>
-window.addEventListener('load', function(){
+(function(){
     const light = 'light';
     const dark = 'dark';
     const system = 'system';
@@ -89,5 +89,5 @@ window.addEventListener('load', function(){
 
     button.addEventListener('click', toggleTheme);
     setTheme(loadedTheme);
-});
+})();
 </script>
