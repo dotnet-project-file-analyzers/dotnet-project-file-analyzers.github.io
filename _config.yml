@@ -13,8 +13,7 @@ plugins:
 - jekyll-include-cache
 - jekyll-sitemap
 
-exclude: ["**/*"]
-include: ["main-repo/docs/"]
+exclude: ["{[!docs/]**/*,*}"]
 
 markdown: kramdown
 highlighter: rouge
