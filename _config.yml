@@ -14,7 +14,7 @@ plugins:
 - jekyll-sitemap
 
 exclude: ["**/*"]
-include: ["main-repo/docs/**"]
+include: ["main-repo/docs/**/*"]
 
 markdown: kramdown
 highlighter: rouge
