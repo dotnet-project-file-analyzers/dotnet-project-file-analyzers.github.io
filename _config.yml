@@ -13,6 +13,9 @@ plugins:
 - jekyll-include-cache
 - jekyll-sitemap
 
+exclude: ["**/*"]
+include: ["main-repo/docs/**"]
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
