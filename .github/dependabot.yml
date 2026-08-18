@@ -6,3 +6,5 @@ updates:
         interval: "cron"
         cronjob: "0 12 * * *"
     directory: /
+    cooldown:
+        default-days: 0
