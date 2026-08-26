@@ -6,5 +6,12 @@ updates:
         interval: "cron"
         cronjob: "0 12 * * *"
     directory: /
-    cooldown:
-        default-days: 0
+    # main-repo tracks main, not releases, but Dependabot resolves it by ranking versions:
+    # a commit carrying a semver tag becomes that version, while an untagged commit only
+    # ever gets a "0.0.0-0.N" pseudo-version. The newest release tag therefore outranks
+    # every commit made after it, and the submodule stays pinned to that release until the
+    # next tag is cut. Ignoring real versions leaves only the pseudo-versions, among which
+    # the newest commit on main ranks highest.
+    ignore:
+      - dependency-name: "main-repo"
+        versions: [">= 1.0.0"]
