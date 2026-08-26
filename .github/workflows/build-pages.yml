@@ -1,0 +1,64 @@
+name: Build and deploy pages
+
+on:
+  push:
+    branches:
+      - main
+  # Sent by the analyzers repository when documentation on main changes, so the
+  # site publishes on merge rather than waiting for the next scheduled run.
+  repository_dispatch:
+    types:
+      - docs-updated
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v7.0.1
+
+      # Checked out into main-repo/ so that the layout matches what the submodule
+      # produced: the exclude list in _config.yml and the URL rewrite in
+      # _includes/footer_custom.html both address documentation by that path.
+      - name: Checkout documentation
+        uses: actions/checkout@v7.0.1
+        with:
+          repository: dotnet-project-file-analyzers/dotnet-project-file-analyzers
+          ref: main
+          path: main-repo
+
+      - name: Configure pages
+        uses: actions/configure-pages@v6.0.0
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1.0.13
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required by jekyll-github-metadata
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5.0.0
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5.0.0
