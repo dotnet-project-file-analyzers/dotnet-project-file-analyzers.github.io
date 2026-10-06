@@ -19,6 +19,7 @@ exclude:
 - "main-repo/props/"
 - "main-repo/projects/"
 - "main-repo/src/"
+- "main-repo/AGENTS.md"
 
 markdown: kramdown
 highlighter: rouge
